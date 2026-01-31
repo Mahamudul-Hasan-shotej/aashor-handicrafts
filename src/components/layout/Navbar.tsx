@@ -54,9 +54,9 @@ const Navbar: React.FC = () => {
                     <button className="text-gray-800 hover:text-secondary transition-colors">
                         <Search size={20} strokeWidth={1.5} />
                     </button>
-                    <button className="hidden sm:block text-gray-800 hover:text-secondary transition-colors">
+                    <Link to="/profile" className="hidden sm:block text-gray-800 hover:text-secondary transition-colors">
                         <User size={20} strokeWidth={1.5} />
-                    </button>
+                    </Link>
                     <Link to="/cart" className="relative text-gray-800 hover:text-secondary transition-colors">
                         <ShoppingBag size={20} strokeWidth={1.5} />
                         {totalItems > 0 && (

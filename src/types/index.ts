@@ -14,4 +14,24 @@ export interface CartItem extends Product {
     quantity: number;
 }
 
-export type Category = 'Electronics' | 'Fashion' | 'Home' | 'Accessories';
+export type Category = 'Nakshi Kantha' | 'Baby Nakshi Katha' | 'Baby Nima Napi';
+
+export interface User {
+    id: string;
+    name: string;
+    email: string;
+    address: {
+        street: string;
+        city: string;
+        state: string;
+        zip: string;
+    };
+}
+
+export interface Order {
+    id: string;
+    date: string;
+    total: number;
+    status: 'Processing' | 'Shipped' | 'Delivered';
+    items: CartItem[];
+}
